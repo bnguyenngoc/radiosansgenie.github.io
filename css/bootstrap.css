@@ -1376,6 +1376,11 @@ a.text-danger:hover,
 a.text-danger:focus {
   color: #843534;
 }
+.bg-vedette {
+	color: #fff;
+	height: 100%;
+	background: linear-gradient(90deg, #51bb9c 50%,#725198 50%);
+}
 .bg-primary {
   color: #fff;
   background-color: #337ab7;
@@ -6770,5 +6775,9 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.footer-copyright{
+	
+	background: #252525;
 }
 /*# sourceMappingURL=bootstrap.css.map */

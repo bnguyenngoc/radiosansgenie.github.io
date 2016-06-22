@@ -23,6 +23,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<link rel="stylesheet" href="css/counter.css" type="text/css">
 </head>
 
 <!-- BARRE DE NAVIGATION -->
@@ -43,7 +44,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 				<li>
-						<a class="page-scroll" href="#star">Vedettes </a>
+						<a class="page-scroll" href="#star">Vedette </a>
 					</li>
                     <li>
                         <a class="page-scroll" href="#about">À propos</a>
@@ -56,13 +57,13 @@
                         <a class="page-scroll" href="#team">L'équipe</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#fournisseur">Fournisseur</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#partner">Partenaires</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -74,38 +75,58 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <img src="img/logo/whitelogo.png"  class="force-width img-responsive">
-                <h1>École de Technologie Supérieure - 4 mars 2016 <br> </h1>
+                <h2>École de Technologie Supérieure</h2>
+				<h2> 4 mars 2016 <br> <br> </h2>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">En savoir plus</a>
             </div>
         </div>
     </header>
-	
+	<!-- Vedette -->
 	<section id="star">
-	<div class="container">
-	
             <div class="row">
                 <div class="col-lg-12 text-center" >
-                    <h1 class="section-heading">En Vedettes</h1>
+                    <h1 class="section-heading" >En Vedette</h1>
                     <hr class="primary">
                 </div>
             </div>
-        </div>
+        
 		
 			<div class="row">
 				<div class="col-lg-6 text-center"  style= "background-color: #51bb9c;">
 				<img src="img/logo/rock.png" class="force-width img-responsive" alt=""> 
-				<h2> 50 Miles </h2>
-				<h2> WAKE UP </h2>
-				<h2> (Tribute to Rage Against The Machine) </h2>
+				<h2 style="color: white"> 50 Miles </h2>
+				<h2 style="color: white"> WAKE UP </h2>
+				<h2 style="color: white"> (Tribute to Rage Against The Machine) </h2>
 				</div>
 				
 				<div class="col-lg-6 text-center"  style= "background-color: #725198;">
 				<img src="img/logo/dance.png" class="force-width img-responsive" alt=""> 
-				<h2> Dj Sniprill </h2>
-				<h2> Dj Chow</h2>
-				<h2> Dj Blyke </h2>
+				<h2 style="color: white"> Dj Sniprill </h2>
+				<h2 style="color: white"> Dj Chow </h2>
+				<h2 style="color: white"> Dj Blyke </h2>
 				</div>
-			</div>	
+			</div>
+	<!-- countdown timer. change the deadline date in var deadline in counter.js -->
+	<h1 class="section-heading"> Temps avant la vente </h1>
+	<hr class="primary">
+	<div id="clockdiv">
+		<div>
+			<span class="days"></span>
+			<div class="smalltext">Jours</div>
+		</div>
+		<div>
+			<span class="hours"></span>
+			<div class="smalltext">Heures</div>
+		</div>
+		<div>
+			<span class="minutes"></span>
+			<div class="smalltext">Minutes</div>
+		</div>
+		<div>
+			<span class="seconds"></span>
+			<div class="smalltext">Secondes</div>
+		</div>
+	</div>
     </section>
 	
 	<!-- À PROPOS -->
@@ -117,7 +138,7 @@
                     <hr class="light">
 					<p><iframe src="https://player.vimeo.com/video/149519862" width="500" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
                     <p class="text-faded">
-1 salle… 2 ambiances! D’un côté se tient une gigantesque piste de danse où plusieurs DJ y mettent le feu. De l’autre, une scène mettant en vedette des groupes rock pour éveiller tous les rockers en vous! Avec plus de 50 000 watts de son et des jeux de lumière, le Rock & Dance de l’ÉTS est l’un des plus gros partys universitaires de la rentrée. Se donnant à l’automne et à l’hiver, des étudiants de partout y viennent pour fêter leur début de session. Lors de cette soirée, le hall de l’école se transforme complètement pour donner une ambiance hors du commun et y accueillir près de 2000 personnes!</p>
+1 salle… 2 ambiances! D’un côté se tient une gigantesque piste de danse où plusieurs DJ y mettent le feu. De l’autre, une scène mettant en vedette des groupes rock pour éveiller tous les rockers en vous! Avec plus de 100 000 watts de son et des jeux de lumière, le Rock & Dance de l’ÉTS est l’un des plus gros partys universitaires de la rentrée. Se donnant à l’automne et à l’hiver, des étudiants de partout y viennent pour fêter leur début de session. Lors de cette soirée, le hall de l’école se transforme complètement pour donner une ambiance hors du commun et y accueillir près de 2000 personnes!</p>
                     <a href="#contact" class="page-scroll btn btn-default btn-xl">Nous contacter </a>
 					<br> <br>
                 </div>
@@ -170,7 +191,7 @@
                     <div class="service-box">
                         <i class="fa fa-5x fa-star wow bounceIn text-primary" data-wow-delay=".3s"></i>
                         <h3>Qu’offre les billets et la zone VIP?</h3>
-                        <p class="text-muted">Un billet VIP donne accès à la zone VIP située au premier étage donnant une vue privilégiée sur les DJ. De plus, vous avez accès à un bar privé, à des toilettes privés ainsi qu’à des promotions au bar.</p>
+                        <p class="text-muted">Accès à la zone VIP située au premier étage donnant une vue privilégiée sur les DJ. De plus, vous avez accès à un bar privé, à des toilettes privés ainsi qu’à des promotions au bar.</p>
                     </div>
                 </div>
 				<div class="col-md-4 text-center">
@@ -206,7 +227,7 @@
                     <div class="service-box">
                         <i class="fa fa-5x fa-sign-out wow bounceIn text-primary" data-wow-delay=".3s"></i>
                         <h3>Est-ce qu’il y a une machine distributrice sur place?</h3>
-                        <p class="text-muted">Un guichet automatique des caisses Desjardins est disponible dans le bâtiment E, à deux pas du pavillon A.</p>
+                        <p class="text-muted">Un guichet automatique des caisses Desjardins est disponible dans le bâtiment E</p>
                     </div>
 				</div>
 				<div class="col-md-4 text-center">
@@ -263,129 +284,140 @@
     </div>
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-4">
                     <a class="portfolio-box">
-                        <img src="img/membre/francis_gregoire.jpg" class="force-width img-responsive" alt="">
+                        <img src="img/membrernd/elodie.jpg" class="force-width img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Greg
+                                    Élodie Collin
                                 </div>
                                 <div class="project-name">
-                                     Test test
+                                     Directrice
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-4">
                     <a class="portfolio-box">
-                        <img src="img/membre/axel.jpg" class="force-width img-responsive" alt="">
+                        <img src="img/membrernd/rousseau.jpg" class="force-width img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Axel			
+                                    Clément Rousseau			
                                 </div>
                                 <div class="project-name">
-                                    Fouteur de marde
+                                    Trésorier
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-4">
                     <a class="portfolio-box">
-                        <img src="img/membre/mathieu_pelletier.jpg" class="force-width img-responsive" alt="">
+                        <img src="img/membrernd/matin.jpg" class="force-width img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Mathieu Pelletier
+                                    Simon Marin
                                 </div>
                                 <div class="project-name">
-                                     Trésorier
+                                     Logistique
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-lg-offset-2">
-                    <a class="portfolio-box">
-                        <img src="img/membrernd/bach.jpg" class="force-width img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Bach Nguyen-Ngoc
-                                </div>
-                                <div class="project-name">
-                                    Witch King
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box">
-                        <img src="img/membre/guillaume.jpg" class="force-width img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Guillaume Lavoie
-                                </div>
-                                <div class="project-name">
-                                    VP Communication
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+				
             </div>
         </div>
      </div>
-        <div class="container marg-down no-padding-bot">
-
-            <div class="row">
-                <div class="pad-20 col-lg-12 text-center">
-                    <h2 class="section-heading">Nos techniciens</h2>
-                    <hr class="light">
+        
+      </div>
+          <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-4">
+                    <a class="portfolio-box">
+                        <img src="img/membrernd/ob.jpg" class="force-width img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Michel Aubé
+                                </div>
+                                <div class="project-name">
+                                     Kawaii Senpai
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <a class="portfolio-box">
+                        <img src="img/membrernd/pipi.jpg" class="force-width img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Cédrick Pipitonne			
+                                </div>
+                                <div class="project-name">
+                                    Petit Pénis
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <a class="portfolio-box">
+                        <img src="img/membrernd/rudelle.jpg" class="force-width img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Benoît Rudelle
+                                </div>
+                                <div class="project-name">
+                                     Bénévoles
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+			<div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-4">
+                    <a class="portfolio-box">
+                        <img src="img/membrernd/vigeant.jpg" class="force-width img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Maxime Vigeant
+                                </div>
+                                <div class="project-name">
+                                     Sécurité
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <a class="portfolio-box">
+                        <img src="img/membrernd/jennifer2.jpg" class="force-width img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Jennifer Tremblay			
+                                </div>
+                                <div class="project-name">
+                                    Chaîne de montage de biscuit
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-      </div>
-          <div class="container-fluid">
-              <div class="row no-gutter">
-                  <div class="col-lg-4 col-sm-6 col-lg-offset-2">
-                      <a class="portfolio-box">
-                          <img src="img/membre/axel.jpg" class="force-width img-responsive" alt="">
-                          <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content">
-                                  <div class="project-category text-faded">
-                                      Axel Pageot
-                                  </div>
-                                  <div class="project-name">
-                                       Technicien
-                                  </div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-4 col-sm-6">
-                      <a class="portfolio-box">
-                          <img src="img/membre/nataniel.jpg" class="force-width img-responsive" alt="">
-                          <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content">
-                                  <div class="project-category text-faded">
-                                      Nathaniel
-                                  </div>
-                                  <div class="project-name">
-                                      Technicien
-                                  </div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-
-          </div>
+        </div>
         <div class="container marg-down">
 
             <div class="row">
@@ -437,7 +469,7 @@
                                       Mathieu Dupuis
                                   </div>
                                   <div class="project-name">
-                                       Homme à tout faire et membre honorable
+                                       Vétéran
                                   </div>
                               </div>
                           </div>
@@ -445,14 +477,14 @@
                   </div>
                   <div class="col-lg-4 col-sm-6">
                       <a class="portfolio-box">
-                          <img src="img/membre/kevin_laquerre.jpg" class="force-width img-responsive" alt="">
+                          <img src="img/membrernd/blais.jpg" class="force-width img-responsive" alt="">
                           <div class="portfolio-box-caption">
                               <div class="portfolio-box-caption-content">
                                   <div class="project-category text-faded">
-                                      Kevin Laquerre
+                                      Julis Blais
                                   </div>
                                   <div class="project-name">
-                                      Éclairagiste et membre honorable
+                                      Vétérante
                                   </div>
                               </div>
                           </div>
@@ -462,6 +494,64 @@
               </div>
 
           </div>
+    </section>
+	
+<!-- Fournisseur -->
+    <section id="fournisseur" >
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h1 class="section-heading">Notre fournisseur officiel</h1>
+                  <hr class="light">
+              </div>
+          </div>
+      </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-lg-offset-3">
+                  <a href="http://produkson.com">
+                      <img src="img/commanditaires/produkson.jpg" class="img-responsive" alt="">
+                  </a>
+              </div>
+          </div>
+        </div>
+    </section>
+	
+<!-- PARTENAIRE -->
+    <section id="partner" class="bg-primary" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="section-heading">Nos partenaires</h1>
+                    <hr class="light">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="service-box">
+                        <a href="http://aeets.com">
+                        <img src="img/commanditaires/aeets.jpg" class="img-responsive" alt="">
+                      </a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="service-box">
+                      <a href="https://www.facebook.com/ets.reflets/?fref=ts">
+                        <img src="img/commanditaires/reflets.jpg" class="img-responsive" alt="">
+                      </a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/commanditaires/resto100genie.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+
+            </div>
+			
+        </div>
     </section>
 	
 <!-- CONTACT -->
@@ -512,7 +602,7 @@
 				</div>
 				<div class="col-lg-12 text-center">
 				<br> <br>
-                    <a target="_blank" title="Joignez-nous sur Facebook" href="https://www.facebook.com/rndets/?fref=ts"><img alt="" src="img/logo/facebook.png" border=0></a>
+                    <a href="https://www.facebook.com/rndets/?fref=ts"> <i class="fa fa-facebook-official fa-3x wow bounceIn" data-wow-delay=".1s"></i> </a>
 					<p> joignez-vous sur notre page Facebook! </p>
                 </div>
 				<div class="col-lg-12 text-center">
@@ -523,63 +613,13 @@
   
         </div>
     </section>
-    <section id="fournisseur" class="bg-primary" >
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12 text-center">
-                  <h2 class="section-heading">Notre fournisseur officiel</h2>
-                  <hr class="light">
-              </div>
-          </div>
-      </div>
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-lg-offset-3">
-                  <a href="http://produkson.com">
-                      <img src="img/commanditaires/produkson.jpg" class="img-responsive" alt="">
-                  </a>
-              </div>
-          </div>
-        </div>
-
-    </section>
-    <section id="partner" >
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Nos partenaires</h2>
-                    <hr class="light">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <div class="service-box">
-                        <a href="http://aeets.com">
-                        <img src="img/commanditaires/aeets.jpg" class="img-responsive" alt="">
-                      </a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center">
-                    <div class="service-box">
-                      <a href="https://www.facebook.com/ets.reflets/?fref=ts">
-                        <img src="img/commanditaires/reflets.jpg" class="img-responsive" alt="">
-                      </a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center">
-                    <div class="service-box">
-                        <img src="img/commanditaires/resto100genie.jpg" class="img-responsive" alt="">
-                    </div>
-                </div>
-
-            </div>
-			
-        </div>
-    </section>
-
-
+			<footer class="bg-primary">
+				<div>
+					<div class="container text-left" >
+						© 2016 Rock & Dance
+					</div>
+				</div>
+			</footer
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -603,6 +643,7 @@
                 ga('send', 'pageview');
 
                 </script>
+	<script src="js/counter.js"></script>
 </body>
 
 </html>

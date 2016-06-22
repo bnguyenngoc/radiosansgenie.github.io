@@ -1592,6 +1592,16 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+.container-vedette {
+	background: linear-gradient(
+	#51bb9c 0%,
+	#51bb9c 50%,
+	#725198 50%,
+	#725198 100
+	);
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
